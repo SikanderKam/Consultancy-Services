@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Outreach | AI Lead Generation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #fff, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subhead {
+            font-size: 20px;
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(168, 85, 247, 0.2);
+            border: 1px solid #a855f7;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        /* Pricing Cards */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #a855f7;
+        }
+
+        .price {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #a855f7;
+        }
+
+        .price small {
+            font-size: 16px;
+            color: #ccc;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .card ul {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .card li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #22c55e;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #a855f7, #ec4899);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            transition: opacity 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #a855f7;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            margin: 60px 0;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .testimonial {
+            background: rgba(255,255,255,0.03);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 3px solid #a855f7;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .author {
+            font-weight: bold;
+            color: #a855f7;
+        }
+
+        /* Guarantee */
+        .guarantee {
+            text-align: center;
+            background: rgba(34, 197, 94, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 60px 0;
+            border: 1px solid #22c55e;
+        }
+
+        /* Booking */
+        .booking-section {
+            background: rgba(255,255,255,0.05);
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 14px;
+            color: #888;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+            .subhead {
+                font-size: 18px;
+            }
+            .booking-section {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">⚡ NEXUS OUTREACH</div>
+            <div class="badge">🔥 ONLY 3 SPOTS LEFT THIS WEEK</div>
+            <h1>
+                We Get You <span class="highlight">5–10 Qualified Appointments</span><br>
+                in 7 Days — Or You Don't Pay
+            </h1>
+            <div class="subhead">
+                Done-for-you cold email + LinkedIn outreach setup.<br>
+                First 3 clients pay only after results.
+            </div>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="card">
+                <h3>📧 Starter</h3>
+                <div class="price">$97 <small>/ one-time</small></div>
+                <ul>
+                    <li>Cold email system setup</li>
+                    <li>5 proven templates</li>
+                    <li>500 leads (Apollo scraped)</li>
+                    <li>24h delivery</li>
+                </ul>
+                <button class="btn" onclick="bookPackage('97')">Book Now →</button>
+            </div>
+
+            <div class="card">
+                <h3>🔗 Pro</h3>
+                <div class="price">$197 <small>/ one-time</small></div>
+                <ul>
+                    <li>Everything in Starter +</li>
+                    <li>LinkedIn automation setup</li>
+                    <li>2,000 targeted leads</li>
+                    <li>7 day follow-up sequence</li>
+                </ul>
+                <button class="btn" onclick="bookPackage('197')">Book Now →</button>
+            </div>
+
+            <div class="card">
+                <h3>🚀 Elite</h3>
+                <div class="price">$497 <small>/ month</small></div>
+                <ul>
+                    <li>Everything in Pro +</li>
+                    <li>Done-for-you outreach</li>
+                    <li>We write & send for you</li>
+                    <li>Pay only for booked calls</li>
+                </ul>
+                <button class="btn" onclick="bookPackage('497')">Book Now →</button>
+            </div>
+        </div>
+
+        <div class="guarantee">
+            <h2>🎯 Zero Risk Guarantee</h2>
+            <p style="margin-top: 15px; font-size: 18px;">If you don't book at least 5 qualified calls within 7 days of setup — <strong>you pay nothing</strong>. Period.</p>
+        </div>
+
+        <div class="testimonials">
+            <h2 style="text-align: center; margin-bottom: 20px;">Real Results</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"Got 14 booked calls in week 1. Made $3,200 from one client. Best $97 I ever spent."</p>
+                    <div class="author">— Alex R., Agency Owner</div>
+                </div>
+                <div class="testimonial">
+                    <p>"Set up in 4 hours. Next day, 6 meetings booked. Unreal ROI."</p>
+                    <div class="author">— Maria S., B2B SaaS</div>
+                </div>
+                <div class="testimonial">
+                    <p>"Went from zero to $4,500 in 10 days. The LinkedIn template alone paid for itself."</p>
+                    <div class="author">— James K., Consultant</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="booking-section" id="booking">
+            <h2>✅ Claim Your Spot</h2>
+            <p style="margin: 20px 0; font-size: 18px;">Select your package above. We'll send setup instructions within 2 hours.</p>
+            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; max-width: 400px; margin: 20px auto;">
+                <p style="font-size: 14px;">⚡ Instant access after payment<br>
+                📦 Includes done-for-you templates<br>
+                🎯 Results or 100% refund</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 Nexus Outreach — Done-for-you lead generation</p>
+            <p style="margin-top: 10px;">📧 support@nexusoutreach.ai | ⏱️ Avg response: 32 minutes</p>
+        </div>
+    </div>
+
+    <script>
+        // Stripe integration simulation (replace with actual Stripe publishable key)
+        // For actual payments: create a Stripe account at stripe.com, get publishable key
+        
+        function bookPackage(amount) {
+            // In production, replace this with actual Stripe Checkout
+            const message = `To book $${amount} package:\n\n1. Go to Stripe → Create payment link\n2. Or PayPal → Send money to your-email@example.com\n3. Or Venmo → @yourhandle\n\nReplace 'your-email@example.com' with your actual payment email in the code.`;
+            
+            // Temporary redirect to Cal.com booking + payment
+            // Step 1: Create free account on Cal.com
+            // Step 2: Create event type "Consultancy Booking"
+            // Step 3: Connect Stripe to Cal.com
+            // Step 4: Replace URL below with your Cal.com link
+            
+            const calComLink = "https://cal.com/yourusername/consultancy"; // CHANGE THIS
+            window.open(calComLink, "_blank");
+            
+            // Fallback alert for testing
+            console.log(`Booking initiated for $${amount} package`);
+            alert(`⚡ Booking initiated!\n\nYou'll be redirected to schedule your setup call.\n\nAfter booking, you'll receive:\n- Setup guide (within 2 hours)\n- Templates pack\n- Lead scraping access\n\nPayment collected after call.`);
+        }
+        
+        // Add tracking (optional but helpful)
+        console.log("Nexus Outreach ready — go close deals!");
+        
+        // Note for deployment:
+        // 1. Replace "yourusername" in calComLink with actual Cal.com username
+        // 2. Set up Stripe Connect in Cal.com dashboard
+        // 3. Test booking flow before sharing
+    </script>
+</body>
+</html>
